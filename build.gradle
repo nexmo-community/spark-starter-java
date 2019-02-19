@@ -10,14 +10,18 @@ repositories {
 ext {
     nexmoVersion = "4.0.1"
     sparkVersion = "2.7.2"
+    slf4jVersion = "1.7.21"
 }
 
 dependencies {
     // Nexmo Client
     implementation "com.nexmo:client:$nexmoVersion"
-    
+
     // Sparkjava Framework
     implementation "com.sparkjava:spark-core:$sparkVersion"
+
+    // Uncomment for Logging
+    // implementation "org.slf4j:slf4j-simple:$slf4jVersion"
 }
 
 mainClassName = 'com.nexmo.starter.App'
