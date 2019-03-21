@@ -5,6 +5,8 @@ import spark.Route;
 import static spark.Spark.*;
 
 public class App {
+    private static final int PORT = 3000;
+
     public static void main(String[] args) {
         // Sample GET Request Route
         Route getExampleRoute = (req, res) -> "Hello world!";
@@ -12,11 +14,16 @@ public class App {
         // Sample POST Request Route
         Route postExampleRoute = (req, res) -> "Hello world!";
 
-        // Set the listening port to 3000
-        port(3000);
+        // Set the listening port
+        port(getPort());
 
         // Register the routes
         get("/example", getExampleRoute);
         post("/example", postExampleRoute);
+    }
+
+    private static int getPort() {
+        String environmentPort = System.getenv("PORT");
+        return environmentPort != null ? Integer.parseInt(environmentPort) : PORT;
     }
 }
