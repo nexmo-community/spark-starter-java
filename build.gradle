@@ -20,8 +20,8 @@ dependencies {
     // Sparkjava Framework
     implementation "com.sparkjava:spark-core:$sparkVersion"
 
-    // Uncomment for Logging
-    // implementation "org.slf4j:slf4j-simple:$slf4jVersion"
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
 }
 
 mainClassName = 'com.nexmo.starter.App'
