@@ -1,0 +1,1 @@
+web: build/install/spark-starter-java/bin/spark-starter-java

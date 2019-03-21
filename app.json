@@ -1,0 +1,5 @@
+{
+  "name": "Spark Java Skeleton App",
+  "description": "A barebones Java application using the Sparkjava Framework and Nexmo",
+  "repository": "https://github.com/nexmo-community/spark-starter-java"
+}
