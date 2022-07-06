@@ -21,7 +21,7 @@ dependencies {
     implementation "com.sparkjava:spark-core:$sparkVersion"
 
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
 }
 
 mainClassName = 'com.nexmo.starter.App'
