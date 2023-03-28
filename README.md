@@ -1,11 +1,20 @@
-# Spark Starter Java
+# ⚠️ This repository is no longer maintained.
+
+<img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" height="48px" alt="Nexmo is now known as Vonage" />
+
+## Support Notice
+This is an archived repository. If you have any questions, feel free to reach out to us at devrel@vonage.com or through our Community Slack at https://developer.vonage.com/community/slack.
+
+<hr />
+
+## Spark Starter Java
 
 This repository contains code that can be used to integrate the [Nexmo Java Client Library](https://github.com/Nexmo/nexmo-java) and the [Spark Framework](http://sparkjava.com/).
 
-## Deploy to Heroku
+### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://nexmo.dev/nexmo-spark-java-heroku)
 
-## How to Manually Use
+### How to Manually Use
 First clone the repository into a directory of your choosing:
 
 ```sh
@@ -26,7 +35,7 @@ Windows:
 
 ![Console output showing that the server is running](application-running.png)
 
-## How to Modify
+### How to Modify
 
 All of the code can be found in the `com.nexmo.starter.App` class:
 
@@ -59,7 +68,7 @@ This class sets up a route listening for a GET and a route listening for a POST 
 
 Any `String` that you return in each `Route` will be sent back to the user.
 
-### Responding with an NCCO
+#### Responding with an NCCO
 
 The [Nexmo Voice API](https://developer.nexmo.com/voice/voice-api/overview) uses [Nexmo Call Control Objects (NCCO)](https://developer.nexmo.com/voice/voice-api/guides/ncco) to modify the flow of a call.
 
@@ -101,7 +110,7 @@ public class App {
 
 From here you would then use something like [ngrok](https://ngrok.com/) to expose your server.
 
-## More Information
+### More Information
 For more information:
 - Nexmo: https://developer.nexmo.com
 - Spark Framework: http://sparkjava.com/
