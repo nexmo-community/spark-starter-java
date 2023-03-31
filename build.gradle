@@ -9,7 +9,7 @@ repositories {
 
 ext {
     nexmoVersion = "4.0.1"
-    sparkVersion = "2.7.2"
+    sparkVersion = "2.9.1"
     slf4jVersion = "1.7.21"
 }
 
